@@ -22,7 +22,7 @@
 }
 
 .name {
-  font-size: 32px;
+  font-size: 31px;
   background-color: blue;
 }
 
@@ -36,5 +36,4 @@ span {
 
 .description {
   background-color: blue;
-}
-
+} 
