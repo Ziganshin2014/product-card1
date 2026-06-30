@@ -1,0 +1,40 @@
+.product {
+  font-family: Arial,  sans-serif;
+  font-size: 15px;
+  color: aqua;
+  
+}
+
+.price {
+  color: black;
+  background-color: green;
+
+}
+
+.title {
+  text-align: center;
+  font-size: 48px;
+  background-color: blue;
+}
+
+.product-cards {
+  padding: 0;
+}
+
+.name {
+  font-size: 32px;
+  background-color: blue;
+}
+
+span {
+  background-color: blue;
+}
+
+.tab {
+  background-color: blue;
+}
+
+.description {
+  background-color: blue;
+}
+
