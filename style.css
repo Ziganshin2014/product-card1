@@ -5,19 +5,19 @@
   
 }
 
-.price{
+.price {
   color: black;
   background-color: green;
 
 }
 
-.title{
+.title {
   text-align: center;
   font-size: 48px;
   background-color: blue;
 }
 
-.product-cards{
+.product-cards {
   padding: 0;
 }
 
@@ -34,7 +34,7 @@ span {
   background-color: blue;
 }
 
-.description{
+.description {
   background-color: blue;
 }
 
