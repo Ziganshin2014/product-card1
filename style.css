@@ -1,8 +1,8 @@
 .product {
-  font-family: Arial,  sans-serif;
+  font-family: 'Montserrat', sans-serif   ;
   font-size: 15px;
   color: aqua;
-  
+  background-image: url(../images/fon.jpg);
 }
 
 .price {
@@ -14,26 +14,65 @@
 .title {
   text-align: center;
   font-size: 48px;
-  background-color: blue;
+  color: aqua;
 }
 
-.product-cards {
-  padding: 0;
-}
+
 
 .name {
   font-size: 33px;
-  background-color: blue;
+  
 }
 
-span {
-  background-color: blue;
+ 
+
+.maska {
+  background-size: contain ;
+  background-position: center ;
+  background-color: #F7F7FA;
+  width: 361px;
+  
+
+
 }
 
-.tab {
-  background-color: blue;
+.mousee {
+  background-size: contain ;
+  background-position: center ;
+  background-color: #F7F7FA;
+  width: 361px
+
 }
 
-.description {
-  background-color: blue;
-} 
+.gell {
+  background-size: contain ;
+  background-position: center ;
+  background-color: #F7F7FA;
+  width: 361px
+}
+
+.maskalittle {
+  background-size: contain ;
+  background-position: center ;
+  background-color: #F7F7FA;
+  width: 361px
+}
+
+.all {
+  background-size: contain ;
+  background-position: center ;
+  background-color: #F7F7FA;
+  width: 361px
+  
+}
+
+
+
+#product-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 31px;
+  list-style: none;
+  justify-content: center;
+
+}
