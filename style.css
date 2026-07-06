@@ -8,7 +8,6 @@
 .price {
   color: black;
   background-color: green;
-
 }
 
 .title {
@@ -17,23 +16,15 @@
   color: aqua;
 }
 
-
-
 .name {
   font-size: 33px;
-  
 }
-
- 
 
 .maska {
   background-size: contain ;
   background-position: center ;
   background-color: #F7F7FA;
   width: 361px;
-  
-
-
 }
 
 .mousee {
@@ -41,7 +32,6 @@
   background-position: center ;
   background-color: #F7F7FA;
   width: 361px
-
 }
 
 .gell {
@@ -63,10 +53,7 @@
   background-position: center ;
   background-color: #F7F7FA;
   width: 361px
-  
 }
-
-
 
 #product-cards {
   display: flex;
@@ -74,5 +61,4 @@
   gap: 31px;
   list-style: none;
   justify-content: center;
-
 }
