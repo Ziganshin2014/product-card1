@@ -1,58 +1,60 @@
-.product {
+.product_project {
   font-family: 'Montserrat', sans-serif   ;
-  font-size: 15px;
-  color: aqua;
-  background-image: url(../images/fon.jpg);
+  font-size: 13px;
+  color: #515076;
+  /*background-image: url(../images/fon.jpg);*/
 }
 
-.price {
-  color: black;
-  background-color: green;
-}
-
-.title {
+.title_aqua {
   text-align: center;
-  font-size: 48px;
-  color: aqua;
+  font-size: 70px;
+  color: #515076;
+  font-weight: 400;
 }
 
-.name {
-  font-size: 33px;
+.name_card {
+  font-size: 20px;
 }
 
-.maska {
+.maska_card {
   background-size: contain ;
   background-position: center ;
   background-color: #F7F7FA;
-  width: 361px;
+  width: 318px;
 }
 
-.mousee {
+.mousse_card {
+  background-size: contain ;
+  background-position: center ; 
+  background-color: #F7F7FA;
+  width: 318px;
+  height: 450px;
+  top: 408px;
+  left: 85px;
+}
+
+.gell_card {
   background-size: contain ;
   background-position: center ;
   background-color: #F7F7FA;
-  width: 361px
+  width: 318px;
+  height: 450px;
 }
 
-.gell {
+.maskalittle_card {
   background-size: contain ;
   background-position: center ;
   background-color: #F7F7FA;
-  width: 361px
+  width: 318px;
+  height: 450px;
 }
 
-.maskalittle {
+.all_card {
   background-size: contain ;
   background-position: center ;
   background-color: #F7F7FA;
-  width: 361px
-}
-
-.all {
-  background-size: contain ;
-  background-position: center ;
-  background-color: #F7F7FA;
-  width: 361px
+  width: 318px;
+  height: 450px;
 }
 
 #product-cards {
@@ -61,4 +63,16 @@
   gap: 31px;
   list-style: none;
   justify-content: center;
+}
+
+.fon_background {
+  width: 790px;
+  height: 697px;
+  top: -0px;
+  left: 85px;
+}
+
+.destiny_card {
+  color: #A5A3B9;
+  font-size: 12px;
 }
