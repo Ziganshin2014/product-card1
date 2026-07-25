@@ -38,7 +38,7 @@ const Consolelog = document.querySelector ('#console_log');
 Consolelog.addEventListener('click',() => consolelog ('ДЗ №6'))
 
 function consolelog(message){
-    alert(3)
+    alert(message)
     console.log(message)
 }
 
