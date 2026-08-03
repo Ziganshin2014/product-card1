@@ -6,13 +6,13 @@ StateTheTemperature ('Москва', '20')
 
 function CheckSpeed (speed) {
     if (speed == 299792458) {
-        console.log('Световая скорость')
+        console.log(`Световая скорость`)
     }
     if (speed > 299792458) {
-        console.log('Сверхсветовая скорость')
+        console.log(`Сверхсветовая скорость`)
     }
     if (speed < 299792458) {
-        console.log('Субсветовая скорость')
+        console.log(`Субсветовая скорость`)
     }
 }
 
@@ -22,8 +22,8 @@ const price = 89
 
 function BuyProduct (Budget) {
     if (Budget >= price) {
-        console.log('${product} приобретён. Спасибо за покупку!')    
-    } else  { console.log('Вам не хватает 1рубль,  пополните баланс') }
+        console.log(`${product} приобретён. Спасибо за покупку!`)    
+    } else  { console.log(`Вам не хватает ${price - Budget} рублей,  пополните баланс`) }
 }
 
 BuyProduct ('9')
