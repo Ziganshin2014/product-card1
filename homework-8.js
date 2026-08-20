@@ -12,6 +12,7 @@ const data = {
 // Задание №4
 
 const carData = {
+    owner: data  ,
     brand: 'Kia' ,
     model: 'SportAge',
     yearofmanufacture: 2019,
@@ -22,7 +23,7 @@ const carData = {
 
 }
 
-const carOwner = data
+carData.owner = data
 
 // Задание №5
 
@@ -40,7 +41,7 @@ checkMaximumspeed(carData)
 // Задание №6
 
 function outputValue (Data, value) {
-    console.log(Object.values(data.name))
+    console.log(Object.values({},Data.value))
 }
 
 outputValue (data, name)
