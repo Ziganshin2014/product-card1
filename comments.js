@@ -80,28 +80,32 @@ export const comments = [{
 }
 ]
 
-const newcomments = comments.filter(comment => comment.includes(".com"))
+const newcomments = comments.filter(comment => 
+    comment.toString(),
+    comment.includes(".com")
+
+)
 
 console.log(newcomments)
 
-function checkComments (id){
+function checkComments (id,post){
     if (id >=5){
-        postId = 1
+        post = 1
 
     }else if(id <5){
-        postId = 2
+        post = 2
     }
 
 }
 
-checkComments(comments.id)
+checkComments(comments.id,comments.postId)
 
 
 const noName = comments.slice(1,2)
 
 console.log(noName)
 
-const test = comments.includes(com => com.isInvalid >= 180)
+const test = comments.find(com => com.isInvalid >= 180)
 
 const reduceEmails = comments.reduce((acc,post) => {acc.push(post.email); return acc   },[] )
 
