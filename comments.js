@@ -4,7 +4,7 @@ export const comments = [{
     name: "id labore ex et quam laborum",
     email: "Eliseo@gardner.biz",
     body: "laudantium enim quasi est quidem magnam voluptate ipsam eos\ntempora quo necessitatibus\ndolor quam autem quasi\nreiciendis et nam sapiente accusantium",
-    isInvalid: 180,
+    
 },
 {
     postId: 1,
@@ -12,7 +12,7 @@ export const comments = [{
     name: "quo vero reiciendis velit similique earum",
     email: "Jayne_Kuhic@sydney.com",
     body: "est natus enim nihil est dolore omnis voluptatem numquam\net omnis occaecati quod ullam at\nvoluptatem error expedita pariatur\nnihil sint nostrum voluptatem reiciendis et",
-    isInvalid: 180,
+    
 },
 {
     postId: 1,
@@ -20,7 +20,7 @@ export const comments = [{
     name: "odio adipisci rerum aut animi",
     email: "Nikita@garfield.biz",
     body: "quia molestiae reprehenderit quasi aspernatur\naut expedita occaecati aliquam eveniet laudantium\nomnis quibusdam delectus saepe quia accusamus maiores nam est\ncum et ducimus et vero voluptates excepturi deleniti ratione",
-    isInvalid: 180,
+    
 },
 {
     postId: 1,
@@ -28,7 +28,7 @@ export const comments = [{
     name: "alias odio sit",
     email: "Lew@alysha.tv",
     body: "non et atque\noccaecati deserunt quas accusantium unde odit nobis qui voluptatem\nquia voluptas consequuntur itaque dolor\net qui rerum deleniti ut occaecati",
-    isInvalid: 100,
+    
 },
 {
     postId: 1,
@@ -36,7 +36,7 @@ export const comments = [{
     name: "vero eaque aliquid doloribus et culpa",
     email: "Hayden@althea.biz",
     body: "harum non quasi et ratione\ntempore iure ex voluptates in ratione\nharum architecto fugit inventore cupiditate\nvoluptates magni quo et",
-    isInvalid: 179,
+    
 },
 {
     postId: 2,
@@ -44,7 +44,7 @@ export const comments = [{
     name: "et fugit eligendi deleniti quidem qui sint nihil autem",
     email: "Presley.Mueller@myrl.com",
     body: "doloribus at sed quis culpa deserunt consectetur qui praesentium\naccusamus fugiat dicta\nvoluptatem rerum ut voluptate autem\nvoluptatem repellendus aspernatur dolorem in",
-    isInvalid: 1000,
+    
 },
 {
     postId: 2,
@@ -52,7 +52,7 @@ export const comments = [{
     name: "repellat consequatur praesentium vel minus molestias voluptatum",
     email: "Dallas@ole.me",
     body: "maiores sed dolores similique labore et inventore et\nquasi temporibus esse sunt id et\neos voluptatem aliquam\naliquid ratione corporis molestiae mollitia quia et magnam dolor",
-    isInvalid: 1,
+    
 },
 {
     postId: 2,
@@ -60,7 +60,7 @@ export const comments = [{
     name: "et omnis dolorem",
     email: "Mallory_Kunze@marie.org",
     body: "ut voluptatem corrupti velit\nad voluptatem maiores\net nisi velit vero accusamus maiores\nvoluptates quia aliquid ullam eaque",
-    isInvalid: 190,
+    
 },
 {
     postId: 2,
@@ -68,7 +68,7 @@ export const comments = [{
     name: "provident id voluptas",
     email: "Meghan_Littel@rene.us",
     body: "sapiente assumenda molestiae atque\nadipisci laborum distinctio aperiam et ab ut omnis\net occaecati aspernatur odit sit rem expedita\nquas enim ipsam minus",
-    isInvalid: 170,
+    
 },
 {
     postId: 2,
@@ -76,13 +76,10 @@ export const comments = [{
     name: "eaque et deleniti atque tenetur ut quo ut",
     email: "Carmen_Keeling@caroline.name",
     body: "voluptate iusto quis nobis reprehenderit ipsum amet nulla\nquia quas dolores velit et non\naut quia necessitatibus\nnostrum quaerat nulla et accusamus nisi facilis",
-    isInvalid: 180,
 }
 ]
 
-const newcomments = comments.filter(comment => 
-    comment.toString(),
-    comment.includes(".com")
+const newcomments = comments.filter(comment => comment.email.includes(".com")
 
 )
 
@@ -105,7 +102,7 @@ const noName = comments.slice(1,2)
 
 console.log(noName)
 
-const test = comments.find(com => com.isInvalid >= 180)
+const test = comments.find(com => com.body.length >= 180)
 
 const reduceEmails = comments.reduce((acc,post) => {acc.push(post.email); return acc   },[] )
 
@@ -116,7 +113,7 @@ const mapEmails = comments.map(com => com.email)
 console.log(mapEmails)
 
 console.log(reduceEmails.toString())
-const test0 = reduceEmails.join
+const test0 = reduceEmails.join()
 console.log(mapEmails.toString())
 const test1 = mapEmails.join()
 

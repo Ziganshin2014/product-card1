@@ -23,11 +23,11 @@ const newMovies = movies.filter(movie => movie.includes("Интерстелла�
 
 console.log(newMovies)
 
-movies.reverse()
+const newMov = newMovies.map(mov => [...mov].reverse())
 
 console.log(movies)
 
-arrayNumbers.reverse()
+const arrNum = arrayNumbers.map(arr => [...arr].reverse())
 
 console.log(arrayNumbers)
 
