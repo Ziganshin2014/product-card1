@@ -1,8 +1,8 @@
-const arrayNumbers = [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+const arrayNumbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
 
 
-const newArray = arrayNumbers.filter(Number => Number> 4 )
+const newArray = arrayNumbers.filter(Number => Number > 4)
 
 console.log(newArray)
 
@@ -23,7 +23,9 @@ const newMovies = movies.filter(movie => movie.includes("Интерстелла�
 
 console.log(newMovies)
 
-const newMov = newMovies.map(mov => [...mov].reverse())
+function reverseArray(arr) {
+  return [...arr].reverse();
+}
 
 console.log(movies)
 
