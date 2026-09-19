@@ -23,7 +23,7 @@ OpenGoogle.addEventListener('click', opengoogle)
 function opengoogle () {
     const answer = confirm ('Вы действительно хотите открыть Google?');
 
-    if (answer == true) {
+    if (answer === true) {
         window.open('https://google.com')
 }   else {
     return;
