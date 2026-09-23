@@ -1,4 +1,5 @@
-import function returnCard(arr) {
+import { products } from "./array.js"
+function returnCard(arr) {
     const card = prompt("Сколько карточек отобразить? От 1 до 5")
     const num = Number(card)
     if (num >= 1 && num <= 5) {

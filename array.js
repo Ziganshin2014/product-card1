@@ -6,4 +6,10 @@ export const products = [
   { title: 'Сироп', price: 350 }
 ];
 
-const reduceProducts = products.reduce((acc,pro) => {acc.push(pro); return acc   },[] )
+const reduceProducts = products.reduce((acc,pro) => {
+  acc[pro.title] = pro.price;
+  return acc   
+},[] )
+
+
+console.log(reduceProducts)
