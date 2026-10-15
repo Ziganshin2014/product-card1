@@ -101,11 +101,11 @@
   <div class="modal" id="modal"> 
     <div class="times">X</div>
     <form class="modal-form" >
-      <input type="text " name="name"  placeholder="Введите ваше имя"  />
-      <input type="text " name="surname"  placeholder="Введите вашу фамилию"  />
-      <input type="date " name="birthday"  placeholder="Введите вашу дату рождения"  />
-      <input type="password " name="new-password"  placeholder="Создайте пароль"  />
-      <input type="password " name="password-repeated"  placeholder="Повторите пароль"  />
+      <label for="name"><input type="text" name="name" required  placeholder="Введите ваше имя"  />Ваше имя</label>
+      <label for="username"><input type="text" name="surname" required  placeholder="Введите вашу фамилию"  />Ваша фамилия</label>
+      <label for="birthday"><input type="date" name="birthday" required  placeholder="Введите вашу дату рождения"  />Ваша дата рождения</label>
+      <label for="new-password"><input type="password" class="new-password" name="new-password" required  placeholder="Создайте пароль"   />Ваш пароль</label>
+      <label for="password-repeated"><input type="password" class="password-repeated" name="password-repeated" required  placeholder="Повторите пароль"  />Повторите пароль</label>
       <button type="submit" class="modal-button">| Зарегистрироваться</button>
     </form>
   </div>
@@ -129,7 +129,7 @@
       <fieldset>
         <legend class="footer-copy">Подпишись на наши акции:</legend>
         <form class="footer-form" >
-          <input type="email " name="email" placeholder="Введите ваш email" class="footer-input" />
+          <input type="email" name="email" placeholder="Введите ваш email" class="footer-input" />
           <button type="submit" class="footer-button">| Подписаться</button>
         </form>
       </fieldset>

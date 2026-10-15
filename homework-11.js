@@ -30,13 +30,22 @@ tim.addEventListener('click', () => {
 })
 
 const form2 = document.querySelector('.modal-form')
+const pas = document.querySelector('.new-password')
+const pass = document.querySelector('.password-repeated')
+
 
 
 form2.addEventListener('submit', (event) => {
-    event.preventDefault()
-    const test3 = new FormData(form2)
-    const test4 = Object.fromEntries(test3.entries())
-    console.log(test4)
+    if (pas.checkValidity() && pass.checkValidity()){
+      event.preventDefault()
+      const test3 = new FormData(form2)
+      const test4 = Object.fromEntries(test3.entries())
+      console.log(test4)
+      
+    } else  {
+        alert ("У ваc несовподает пароль пароль!!!")
+
+    }
 })
 
 const but = document.querySelector('.modal-button')
@@ -46,3 +55,8 @@ but.addEventListener('click', () => {
     modal.classList.remove("modal-showed")
     overlay.classList.remove("showed")
 })
+
+const user = {
+    form2,
+    createdOn: new Date()
+}
