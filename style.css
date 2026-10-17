@@ -1,5 +1,5 @@
 .product_project {
-  font-family: 'Montserrat', sans-serif   ;
+  font-family: 'Montserrat', sans-serif;
   font-size: 13px;
   color: #515076;
 }
@@ -16,15 +16,15 @@
 }
 
 .maska_card {
-  background-size: contain ;
-  background-position: center ;
+  background-size: contain;
+  background-position: center;
   background-color: #F7F7FA;
   width: 318px;
 }
 
 .mousse_card {
-  background-size: contain ;
-  background-position: center ; 
+  background-size: contain;
+  background-position: center;
   background-color: #F7F7FA;
   width: 318px;
   height: 450px;
@@ -33,24 +33,24 @@
 }
 
 .gell_card {
-  background-size: contain ;
-  background-position: center ;
+  background-size: contain;
+  background-position: center;
   background-color: #F7F7FA;
   width: 318px;
   height: 450px;
 }
 
 .maskalittle_card {
-  background-size: contain ;
-  background-position: center ;
+  background-size: contain;
+  background-position: center;
   background-color: #F7F7FA;
   width: 318px;
   height: 450px;
 }
 
 .all_card {
-  background-size: contain ;
-  background-position: center ;
+  background-size: contain;
+  background-position: center;
   background-color: #F7F7FA;
   width: 318px;
   height: 450px;
@@ -87,3 +87,105 @@ button {
 .button {
   color: red;
 }
+
+
+
+.footer-button {
+  color: #000000;
+}
+
+.footer-input {
+  color: #000000BF;
+}
+
+.image {
+  color: black;
+}
+
+
+.footer {
+  width: 100%;
+  background-color: #3A3A3A;
+  padding: 30px 20px;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+  height: 477px;
+}
+
+.footer-content {
+    max-width: 1728px; 
+    margin: 0 auto;
+}
+
+.footer-copy {
+  text-align: center ;
+}
+
+.footer-form {
+  text-align: center ;
+}
+
+.right {
+  text-align: right;
+}
+
+.h1 {
+  color: #FFFFFF;
+}
+
+.p {
+  color: #FFFFFF ;
+}
+
+.modal {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  color: black;
+  background-color: white;
+  opacity: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  visibility: hidden;
+  user-select: none;
+  transition: opacity 0.7s, visibility 0.7s;
+  border-radius: 25px;
+  width: 720px;
+  height: 450px;
+}
+
+.modal.modal-showed {
+  visibility: visible;
+  opacity: 1;
+}
+
+.overlay {
+  position: fixed;
+  opacity: 0;
+  inset: 0;
+  visibility: hidden;
+  background-color: #000000;
+  z-index: 999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.overlay.showed {
+  visibility: visible;
+  opacity: 33%;
+}
+
+.times {
+  position: absolute;
+  font-size: 30px;
+  color: red;
+  top: 10px;
+  right: 15px;
+  user-select: none;
+  cursor: pointer;
+}
+

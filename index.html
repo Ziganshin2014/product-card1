@@ -1,102 +1,157 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Каталог товаров</title>
-    <link rel="stylesheet" href="style.css">
-  </head>
-  <body class="product_project">
-    <img class="fon_background" src="../images/fon.jpg" alt="">
-    <h1 class = "title_aqua">Выбери свой продукт</h1>
-    <ul id="product-cards">
-      
-      <button id="change_button" class="button">Сменить цвет этой кнопки</button>
-      <button id="change_all_card"> Сменить цвет всех карточек</button>
-      <button id="change_first_card"> Сменить цвет первой карточки</button>
-      <button id="openGoogle">открыть Гугл</button>
-      <button id="console_log">Написать консоль лог</button>
-      <li class="mousse_card object">
-        <img src="images/mousse.jpg" alt="Товар Увлажняющий мусс">
-        <span class="destiny_card">ДЛЯ НОРМАЛЬНОЙ КОЖИ</span>
-        <h2 class="name_card">Увлажняющий мусс</h2>
-        <p class="description_card">Глубоко увлажняют кожу лица, оставляя её мягкой и гладкой.</p>
-        <span>Состав:</span>
-        <ul class="tab_structure">
-          <li>активные натуральные комплексы</li>
-          <li>витамины С, А, РР, В И Е</li>
-          <li>солнцезащитные компоненты</li>
-        <div><b class = "price_card">Цена:</b>
-          <span class = "price_card">2 750  &#8381</span>
-        </div>
-        </ul>
-      </li>
-      <li class="maska_card object">
-        <img src="images/maska.jpg" alt="Товар Увлажняющая маска">
-        <span class="destiny_card">ДЛЯ НОРМАЛЬНОЙ КОЖИ</span>
-        <h2 class="name_card">Увлажняющая маска</h2>
-        <p class="description_card">Способствует удерживанию влаги в верхних слоях кожи.</p>
-        <span>Состав:</span>
-        <ul class="tab_structure">
-          <li>воски</li>
-          <li>минералы</li>
-          <li>масла</li>
-        <div><b class = "price_card">Цена:</b>
-          <span class = "price_card">3 500 &#8381</span>
-        </div>
-        </ul>
-      </li>
-      <li class="gell_card object">
-        <img src="images/gell.jpg" alt="Товар Гель для умывания">
-        <span class="destiny_card">ДЛЯ НОРМАЛЬНОЙ КОЖИ</span>
-        <h2 class="name_card">Гель для умывания</h2>
-        <p class="description_card">Интенсивно очищает, не повреждает защитный барьер кожи.</p>
-        <span>Состав:</span>
-        <ul class="tab_structure">
-          <li>минералы</li>
-          <li>витамины С, А, РР, В И Е</li>
-          <li>солнцезащитные компоненты</li>
-        <div><b class = "price_card">Цена:</b>
-          <span class = "price_card">1 650  &#8381</span>
-        </div>
-        </ul>
-      </li>
-      <li class="maskalittle_card object">
-        <img src="images/1№.jpg" alt="Товар Подарочный набор №1">
-        <span class="destiny_card">ДЛЯ НОРМАЛЬНОЙ КОЖИ</span>
-        <h2 class="name_card">Подарочный набор №1</h2>
-        <p class="description_card">Набор, состоящий из увлажняющего крема и маски.</p>
-        <span>Состав:</span>
-        <ul class="tab_structure">
-          <li>воски</li>
-          <li>минералы</li>
-          <li>масла</li>
-        <div><b class = "price_card">Цена:</b>
-          <span class = "price_card">4 750  &#8381</span>
-        </div>
-        </ul>
-      </li>
-      <li class="all_card object">
-        <img src="images/5№.jpg" alt="Товар Подарочный набор №5">
-        <span class="destiny_card">ДЛЯ НОРМАЛЬНОЙ КОЖИ</span>
-        <h2 class="name_card">Подарочный набор №5</h2>
-        <p class="description_card">Весь набор средств Invisible symphony, крем, маска, мусс и гель для умывания.</p>
-        <span>Состав:</span>
-        <ul class="tab_structure">
-          <li>воски</li>
-          <li>минералы</li>
-          <li>масла</li>
-        <div><b class = "price_card">Цена:</b>
-          <span class = "price_card">7 520  &#8381</span>
-        </div>
-        </ul>
-      </li>
-    </ul>
-    <script src="main.js"></script>
-    <script src="homework-7.js"></script>
-    <script src="homework-8.js"></script>
-    <script type="module" src="homework-9.js"></script>
-    <script type="module" src="homework-10.js"></script>
-  </body>
-</html>
 
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Каталог товаров</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="product_project">
+  <img class="fon_background" src="../images/fon.jpg" alt="">
+  <h1 class="title_aqua">Выбери свой продукт</h1>
+  <button id="change_button" class="button">Сменить цвет этой кнопки</button>
+  <button id="change_all_card"> Сменить цвет всех карточек</button>
+  <button id="change_first_card"> Сменить цвет первой карточки</button>
+  <button id="openGoogle">открыть Гугл</button>
+  <button id="console_log">Написать консоль лог</button>
+  <ul id="product-cards">
+
+
+    <li class="mousse_card object">
+      <img src="images/mousse.jpg" alt="Товар Увлажняющий мусс">
+      <span class="destiny_card">ДЛЯ НОРМАЛЬНОЙ КОЖИ</span>
+      <h2 class="name_card">Увлажняющий мусс</h2>
+      <p class="description_card">Глубоко увлажняют кожу лица, оставляя её мягкой и гладкой.</p>
+      <span>Состав:</span>
+      <ul class="tab_structure">
+        <li>активные натуральные комплексы</li>
+        <li>витамины С, А, РР, В И Е</li>
+        <li>солнцезащитные компоненты</li>
+        <div><b class="price_card">Цена:</b>
+          <span class="price_card">2 750 &#8381</span>
+        </div>
+      </ul>
+    </li>
+    <li class="maska_card object">
+      <img src="images/maska.jpg" alt="Товар Увлажняющая маска">
+      <span class="destiny_card">ДЛЯ НОРМАЛЬНОЙ КОЖИ</span>
+      <h2 class="name_card">Увлажняющая маска</h2>
+      <p class="description_card">Способствует удерживанию влаги в верхних слоях кожи.</p>
+      <span>Состав:</span>
+      <ul class="tab_structure">
+        <li>воски</li>
+        <li>минералы</li>
+        <li>масла</li>
+        <div><b class="price_card">Цена:</b>
+          <span class="price_card">3 500 &#8381</span>
+        </div>
+      </ul>
+    </li>
+    <li class="gell_card object">
+      <img src="images/gell.jpg" alt="Товар Гель для умывания">
+      <span class="destiny_card">ДЛЯ НОРМАЛЬНОЙ КОЖИ</span>
+      <h2 class="name_card">Гель для умывания</h2>
+      <p class="description_card">Интенсивно очищает, не повреждает защитный барьер кожи.</p>
+      <span>Состав:</span>
+      <ul class="tab_structure">
+        <li>минералы</li>
+        <li>витамины С, А, РР, В И Е</li>
+        <li>солнцезащитные компоненты</li>
+        <div><b class="price_card">Цена:</b>
+          <span class="price_card">1 650 &#8381</span>
+        </div>
+      </ul>
+    </li>
+    <li class="maskalittle_card object">
+      <img src="images/1№.jpg" alt="Товар Подарочный набор №1">
+      <span class="destiny_card">ДЛЯ НОРМАЛЬНОЙ КОЖИ</span>
+      <h2 class="name_card">Подарочный набор №1</h2>
+      <p class="description_card">Набор, состоящий из увлажняющего крема и маски.</p>
+      <span>Состав:</span>
+      <ul class="tab_structure">
+        <li>воски</li>
+        <li>минералы</li>
+        <li>масла</li>
+        <div><b class="price_card">Цена:</b>
+          <span class="price_card">4 750 &#8381</span>
+        </div>
+      </ul>
+    </li>
+    <li class="all_card object">
+      <img src="images/5№.jpg" alt="Товар Подарочный набор №5">
+      <span class="destiny_card">ДЛЯ НОРМАЛЬНОЙ КОЖИ</span>
+      <h2 class="name_card">Подарочный набор №5</h2>
+      <p class="description_card">Весь набор средств Invisible symphony, крем, маска, мусс и гель для умывания.</p>
+      <span>Состав:</span>
+      <ul class="tab_structure">
+        <li>воски</li>
+        <li>минералы</li>
+        <li>масла</li>
+        <div><b class="price_card">Цена:</b>
+          <span class="price_card">7 520 &#8381</span>
+        </div>
+      </ul>
+    </li>
+  </ul>
+  <button class="reges" type="button">Регестрация</button>
+  <div class="overlay"></div>
+  
+  <div class="modal" id="modal"> 
+    <div class="times">X</div>
+    <form class="modal-form" >
+      <label for="name"><input type="text" name="name" required  placeholder="Введите ваше имя"  />Ваше имя</label>
+      <label for="username"><input type="text" name="surname" required  placeholder="Введите вашу фамилию"  />Ваша фамилия</label>
+      <label for="birthday"><input type="date" name="birthday" required  placeholder="Введите вашу дату рождения"  />Ваша дата рождения</label>
+      <label for="new-password"><input type="password" class="new-password" name="new-password" required  placeholder="Создайте пароль"   />Ваш пароль</label>
+      <label for="password-repeated"><input type="password" class="password-repeated" name="password-repeated" required  placeholder="Повторите пароль"  />Повторите пароль</label>
+      <button type="submit" class="modal-button">| Зарегистрироваться</button>
+    </form>
+  </div>
+  
+    
+  
+  
+
+  
+
+
+  <footer class="footer">
+    <div class="footer-content">
+      <div>
+        <h1 class="h1">Product Cards</h1>
+        <p class="p">У нас самые лучшие продукты для кожи!</p>
+        <img class="image" src="/images/Vector.jpg" alt="">
+        <img class="image" src="images/Vector (1).jpg" alt="">
+
+      </div>
+      <fieldset>
+        <legend class="footer-copy">Подпишись на наши акции:</legend>
+        <form class="footer-form" >
+          <input type="email" name="email" placeholder="Введите ваш email" class="footer-input" />
+          <button type="submit" class="footer-button">| Подписаться</button>
+        </form>
+      </fieldset>
+
+      <div class="right">
+        <h2>Быстрые ссылки</h2>
+        <nav>
+          <a href="#">Главная</a>
+          <a href="#">Магазин</a>
+          <a href="#">Контакты</a>
+        </nav>
+      </div>
+      <p class="footer-copy">________________</p>
+      <p class="footer-copy">www.product-cards.com©all right reserve</p>
+    </div>
+  </footer>
+  <script src="main.js"></script>
+  <script src="homework-7.js"></script>
+  <script src="homework-8.js"></script>
+  <script type="module" src="homework-9.js"></script>
+  <script type="module" src="homework-10.js"></script>
+  <script src="homework-11.js"></script>
+</body>
+
+</html>
