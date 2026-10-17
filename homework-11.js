@@ -36,7 +36,7 @@ const pass = document.querySelector('.password-repeated')
 
 
 form2.addEventListener('submit', (event) => {
-    if (pas.checkValidity() && pass.checkValidity()){
+    if (pas.checkValidity() === pass.checkValidity()){
       event.preventDefault()
       const test3 = new FormData(form2)
       const test4 = Object.fromEntries(test3.entries())
