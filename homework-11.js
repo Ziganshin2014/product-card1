@@ -18,7 +18,7 @@ regest.addEventListener('click', () => {
     modal.classList.add("modal-showed")
     overlay.classList.add("showed")
 
-    
+
 })
 
 const tim = document.querySelector('.times')
@@ -36,15 +36,19 @@ const pass = document.querySelector('.password-repeated')
 
 
 form2.addEventListener('submit', (event) => {
-    if (pas.checkValidity() === pass.checkValidity()){
-      event.preventDefault()
-      const test3 = new FormData(form2)
-      const test4 = Object.fromEntries(test3.entries())
-      console.log(test4)
-      
-    } else  {
-        alert ("У ваc несовподает пароль пароль!!!")
 
+    event.preventDefault()
+    const test3 = new FormData(form2)
+    const test4 = Object.fromEntries(test3.entries())
+    console.log(test4)
+    if (!form2.checkValidity()) {
+        form2.reportValidity()
+        return
+    }
+
+    if (pas.value !== pass.value) {
+        alert("У вас не совпадает пароль!")
+        return
     }
 })
 
