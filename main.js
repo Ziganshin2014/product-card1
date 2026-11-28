@@ -1,54 +1,35 @@
-const AllCards = document.querySelector ('#change_all_card');
-const ProductCards = document.querySelectorAll ('.object');
-const RedHash = '#ff0000';
-const BlueHash = 'rgb(0, 247, 255)';
+import './homework-11.js'
+import './homework-10.js'
+import './homework-7.js'
+import './homework-8.js'
+import './homework-9.js'
+import './array.js'
+import './comments.js'
+import './main2.js'
+import { Modal } from './Modal.js';
+import { Form } from './Form.js';
 
 
-AllCards.addEventListener('click', () => {
-    ProductCards.forEach((card) => card.style.backgroundColor = RedHash )
-})
-    
-    
-
-
-const FirstCard = document.querySelector ('#change_first_card');
-const firstcard = document.querySelector ('.mousse_card');
-
-FirstCard.addEventListener('click', () => {
-    firstcard.style.backgroundColor = BlueHash
-})
-
-const OpenGoogle = document.querySelector ('#openGoogle');
-OpenGoogle.addEventListener('click', opengoogle)
-function opengoogle () {
-    const answer = confirm ('Вы действительно хотите открыть Google?');
-
-    if (answer === true) {
-        window.open('https://google.com')
-}   else {
-    return;
+class Phone {
+  constructor(brand, model, price) {
+    this.brand = brand;
+    this.model = model;
+    this.price = price;
+  }
 }
 
-}
-    
 
-
-
-const Consolelog = document.querySelector ('#console_log');
-Consolelog.addEventListener('click',() => consolelog ('ДЗ №6'))
-
-function consolelog(message){
-    alert(message)
-    console.log(message)
+class Apple extends Phone {
+    constructor(brand, model, price, iosVersion) {
+        super(brand, model, price);
+        this.iosVersion = iosVersion;
+    }
 }
 
-const title = document.querySelector('.title_aqua');
-title.addEventListener('mouseover', function(){
-    console.log('Выбери свой продукт')
-})
-
-const change = document.querySelector ('#change_button.button');
-change.addEventListener('click', () => {
-    change.classList.toggle('button')
-})
+class Samsung extends Phone {
+    constructor(brand, model, price, androidVersion) {
+        super(brand, model, price);
+        this.androidVersion = androidVersion;
+    }
+}
 
