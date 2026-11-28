@@ -1,4 +1,4 @@
-class Form {   
+export class Form {   
     constructor(id) {
       this.form = document.querySelector('.footer-form');
     }

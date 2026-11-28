@@ -6,8 +6,8 @@ import './homework-9.js'
 import './array.js'
 import './comments.js'
 import './main2.js'
-import './Modal.js'
-import './Form.js'
+import { Modal } from './Modal.js';
+import { Form } from './Form.js';
 
 
 class Phone {

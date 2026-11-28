@@ -1,4 +1,4 @@
-class Modal {   
+export class Modal {   
     constructor(id) {
         this.modal = document.querySelector(id);
         this.regest = document.querySelector('.reges');
